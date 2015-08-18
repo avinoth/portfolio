@@ -1,0 +1,36 @@
+.nav-sidebar {
+	width: 100%;
+	padding: 30px 0;
+}
+
+.nav-sidebar a {
+	border-right: 1px solid #ddd;
+	color: #333;
+	-webkit-transition: all 0.08s linear;
+	-moz-transition: all 0.08s linear;
+	-o-transition: all 0.08s linear;
+	transition: all 0.08s linear;
+}
+
+.nav-sidebar .active a {
+	cursor: default;
+	border: 1px solid #ddd;
+	border-right: none;
+}
+
+.nav-sidebar .active a:hover {
+	background-color: #EEEEEE;
+	color: #6E798A;
+}
+
+h2 {
+	color:#0b56a8;
+}
+
+.container .text-style
+{
+  text-align: justify;
+  line-height: 23px;
+  margin: 0 13px 0 0;
+  font-size: 19px;
+}

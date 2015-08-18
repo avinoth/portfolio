@@ -13,6 +13,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -66,172 +67,92 @@
 
     <!-- Page Content -->
     <div class="container">
+      <div class="col-sm-2">
+          <nav class="nav-sidebar">
+          <ul class="nav tabs">
+            <li class=""><a href="#startwriting" data-toggle="tab">startwriting.in</a></li>
+            <li class="active"><a href="#dstartup" data-toggle="tab">Discover a Startup</a></li>
+            <li class=""><a href="#inspiry" data-toggle="tab">inspiry</a></li>
+            <li class=""><a href="#cram" data-toggle="tab">cram</a></li>
+            <li class=""><a href="#gometacritic" data-toggle="tab">go-metacritic</a></li>
+            <li class=""><a href="#f2k" data-toggle="tab">f2k</a></li>
+            <li class=""><a href="#adjourn" data-toggle="tab">adjourn</a></li>
+            <li class=""><a href="#moviesuggester" data-toggle="tab">Movie Suggester</a></li>
+          </ul>
+        </nav>
+      </div>
+        <!-- tab content -->
+      <div class="tab-content">
+          <div class="tab-pane text-style" id="startwriting">
+            <h2><a target="_blank" href="http://www.startwriting.in">startwriting.in</a></h2>
+            <p>
+              Startwriting in an online journal that lets user's entries to be saved directly to their dropbox.
+            </p>
+            <p><b>Stack:</b> <i>Ruby, Rails, Bootstrap.</i></p>
+          </div>
 
-        <!-- Page Header -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">projects
-                </h2>
-            </div>
-        </div>
-        <!-- /.row -->
+          <div class="tab-pane active text-style" id="dstartup">
+            <h2><a target="_blank" href="http://www.avinoth.com/dstartup">Discover a Startup</a></h2>
+            <p>
+              Discover Random startup when requested. Uses AngelList api.
+            </p>
+            <p><b>Stack:</b> <i>React.</i></p>
+          </div>
 
+          <div class="tab-pane text-style" id="inspiry">
+            <h2><a target="_blank" href="https://github.com/avinoth/inspiry">inspiry</a></h2>
+            <p>
+              A slack bot that posts one inspirations quote a day to the slack group of preference.
+            </p>
+            <p><b>Stack:</b> <i>Ruby.</i></p>
+          </div>
 
-        <!-- Projects Row -->
-        <div class="row">
+          <div class="tab-pane text-style" id="adjourn">
+            <h2><a target="_blank" href="https://github.com/avinoth/adjourn">adjourn</a></h2>
+            <p>
+              adjourn is a simple journal writing tool to use locally.
+            </p>
+            <p><b>Stack:</b> <i>NodeJS.</i></p>
+          </div>
 
-            <div class="col-md-4">
-                <div class="panel panel-default portfolio-item">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><a href="http://www.startwriting.in">startwriting.in</a></h3>
-                    </div>
-                    <div class="panel-body">
-                        <a href="http://www.startwriting.in">
-                            <img class="img-responsive" src="img/startwriting.png" alt="startwriting">
-                        </a>
-                        <p>Startwriting in an online journal that lets user's entries to be saved directly to their dropbox.</p>
-                    </div>
-                    <div class="panel-footer">
-                        <b>Work:</b> Full Stack.
-                        <b>Stack:</b> Ruby, Rails, Bootstrap.
-                    </div>
-                </div>
-            </div>
+          <div class="tab-pane text-style" id="cram">
+            <h2><a target="_blank" href="https://github.com/avinoth/cram">cram</a></h2>
+            <p>
+              Cram is an api that given a movie will respond the movie's ratings on different sites.
+            </p>
+            <p><b>Stack:</b> <i>Golang.</i></p>
+          </div>
 
-            <div class="col-md-4">
-                <div class="panel panel-default portfolio-item">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><a href="https://github.com/avinoth/inspiry">inspiry</a></h3>
-                    </div>
-                    <div class="panel-body">
-                        <a href="https://github.com/avinoth/inspiry">
-                            <img class="img-responsive" src="img/dojocat.jpg" alt="">
-                        </a>
-                        <p>A slack bot that posts one inspirations quote a day to the slack group of preference.</p>
-                    </div>
-                    <div class="panel-footer">
-                        <b>Work:</b> Full Stack.
-                        <b>Stack:</b> Ruby.
-                    </div>
-                </div>
-            </div>
+          <div class="tab-pane text-style" id="gometacritic">
+            <h2><a target="_blank" href="https://github.com/avinoth/go-metacritic">go-metacritic</a></h2>
+            <p>
+              A Golang library that helps consume data from the movie rating site metacritic.
+            </p>
+            <p><b>Stack:</b> <i>Golang.</i></p>
+          </div>
 
-            <div class="col-md-4">
-                <div class="panel panel-default portfolio-item">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><a href="https://github.com/avinoth/adjourn">adjourn</a></h3>
-                    </div>
-                    <div class="panel-body">
-                        <a href="https://github.com/avinoth/adjourn">
-                            <img class="img-responsive" src="img/dojocat.jpg" alt="">
-                        </a>
-                        <p>adjourn is a simple journal writing tool to use locally..</p>
-                    </div>
-                    <div class="panel-footer">
-                        <b>Work:</b> Full Stack.
-                        <b>Stack:</b> NodeJS.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end row -->
+          <div class="tab-pane text-style" id="f2k">
+            <h2><a target="_blank" href="http://vi-f2k.appspot.com">f2k</a></h2>
+            <p>
+              An API that gives one random HN submission when requested.
+            </p>
+            <p><b>Stack:</b> <i>Golang.</i></p>
+          </div>
 
-        <!-- Projects Row -->
-        <div class="row">
+          <div class="tab-pane text-style" id="moviesuggester">
+            <h2><a target="_blank" href="https://github.com/avinoth/MovieSuggester">Movie Suggester</a></h2>
+            <p>
+              A simple movie suggester that suggests movies based on the filters.(dicontinued..)
+            </p>
+            <p><b>Stack:</b> <i>Python, Flask, Bootstrap.</i></p>
+          </div>
 
-            <div class="col-md-4">
-                <div class="panel panel-default portfolio-item">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><a href="https://github.com/avinoth/cram">cram</a></h3>
-                    </div>
-                    <div class="panel-body">
-                        <a href="https://github.com/avinoth/cram">
-                            <img class="img-responsive" src="img/dojocat.jpg" alt="">
-                        </a>
-                        <p>Cram is an api that given a movie will respond the movie's ratings on different sites.</p>
-                    </div>
-                    <div class="panel-footer">
-                        <b>Work:</b> Full Stack.
-                        <b>Stack:</b> Golang.
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="panel panel-default portfolio-item">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><a href="https://github.com/avinoth/go-metacritic">go-metacritic</a></h3>
-                    </div>
-                    <div class="panel-body">
-                        <a href="https://github.com/avinoth/go-metacritic">
-                            <img class="img-responsive" src="img/dojocat.jpg" alt="">
-                        </a>
-                        <p>A Golang library that helps consume data from the movie rating site metacritic.</p>
-                    </div>
-                    <div class="panel-footer">
-                        <b>Work:</b> Full Stack.
-                        <b>Stack:</b> Golang.
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="panel panel-default portfolio-item">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><a href="http://vi-f2k.appspot.com">f2k</a></h3>
-                    </div>
-                    <div class="panel-body">
-                        <a href="http://vi-f2k.appspot.com">
-                            <img class="img-responsive" src="img/dojocat.jpg" alt="">
-                        </a>
-                        <p>An API that gives one random HN submission when requested..</p>
-                    </div>
-                    <div class="panel-footer">
-                        <b>Work:</b> Full Stack.
-                        <b>Stack:</b> Golang.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end row -->
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="panel panel-default portfolio-item">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><a href="https://github.com/avinoth/MovieSuggester">Movie Suggester</a></h3>
-                    </div>
-                    <div class="panel-body">
-                        <a href="https://github.com/avinoth/MovieSuggester">
-                            <img class="img-responsive" src="img/dojocat.jpg" alt="">
-                        </a>
-                        <p>A simple movie suggester that suggests movies based on the filters.(dicontinued..)</p>
-                    </div>
-                    <div class="panel-footer">
-                        <b>Work:</b> Full Stack.
-                        <b>Stack:</b> Python, Flask, Bootstrap..
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; avinoth 2015</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
-
+      </div>
     </div>
     <!-- /.container -->
 
     <!-- Bootstrap Core JavaScript -->
+    <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
 </body>
