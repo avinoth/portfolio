@@ -70,8 +70,10 @@
       <div class="col-sm-2">
           <nav class="nav-sidebar">
           <ul class="nav tabs">
+            <li class="active"><a href="#slacksnippet" data-toggle="tab">slack-snippet</a></li>
+            <li class=""><a href="#apistore" data-toggle="tab">apistore</a></li>
             <li class=""><a href="#startwriting" data-toggle="tab">startwriting.in</a></li>
-            <li class="active"><a href="#dstartup" data-toggle="tab">Discover a Startup</a></li>
+            <li class=""><a href="#dstartup" data-toggle="tab">dstartup</a></li>
             <li class=""><a href="#inspiry" data-toggle="tab">inspiry</a></li>
             <li class=""><a href="#cram" data-toggle="tab">cram</a></li>
             <li class=""><a href="#gometacritic" data-toggle="tab">go-metacritic</a></li>
@@ -83,6 +85,22 @@
       </div>
         <!-- tab content -->
       <div class="tab-content">
+          <div class="tab-pane text-style active" id="slacksnippet">
+            <h2><a target="_blank" href="https://github.com/avinoth/slack-snippet">slack-snippet</a></h2>
+            <p>
+              SlackSnippet is an open source self hosted slack based tool to quickly save and access snippets / text.
+            </p>
+            <p><b>Stack:</b> <i>Ruby, Sinatra.</i></p>
+          </div>
+
+          <div class="tab-pane text-style" id="apistore">
+            <h2><a target="_blank" href="https://github.com/avinoth/apistore">apistore</a></h2>
+            <p>
+              An open source self hosted app to store and access APIs dynamically. A minimal alternative to Parse.
+            </p>
+            <p><b>Stack:</b> <i>Ruby, Rails API.</i></p>
+          </div>
+
           <div class="tab-pane text-style" id="startwriting">
             <h2><a target="_blank" href="http://www.startwriting.in">startwriting.in</a></h2>
             <p>
@@ -91,7 +109,7 @@
             <p><b>Stack:</b> <i>Ruby, Rails, Bootstrap.</i></p>
           </div>
 
-          <div class="tab-pane active text-style" id="dstartup">
+          <div class="tab-pane text-style" id="dstartup">
             <h2><a target="_blank" href="http://www.avinoth.com/dstartup">Discover a Startup</a></h2>
             <p>
               Discover Random startup when requested. Uses AngelList api.
@@ -154,7 +172,15 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-58182726-3', 'auto');
+      ga('send', 'pageview');
+    </script>
 </body>
 
 </html>
